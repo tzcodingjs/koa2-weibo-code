@@ -4,6 +4,8 @@
 
 const seq = require('./seq')
 
+require('./model/index')
+
 seq.sync({force:true}).then(() => {
     console.log('sync ok')
     process.exit()

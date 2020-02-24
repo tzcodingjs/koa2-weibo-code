@@ -2,7 +2,7 @@
  * @description sequelize 配置
  */
 
-const Sequelize = require('supertest')
+const Sequelize = require('sequelize')
 const { MYSQL_CONF } = require('../conf/db')
 const { isProd, isTest } = require('../utils/env')
 
