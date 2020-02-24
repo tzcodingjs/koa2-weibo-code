@@ -24,6 +24,7 @@ const { DEFAULT_PICTURE } = require('../conf/constant')
         return list
     }
 
+    // 判断是否为数组
     if(list instanceof Array){
         return list.map(_formatUserPicture)
     }
