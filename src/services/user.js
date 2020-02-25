@@ -29,6 +29,7 @@ async function getUserInfo(userName, password){
 
     // 格式化
     const formatRes = formatUser(result.dataValues)
+    
     return formatRes
 }
 
