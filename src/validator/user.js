@@ -1,8 +1,9 @@
 /**
  * @description user 数据格式校验
+ * 
  */
 
- const validate = require('./_validate')
+const validate = require('./_validate')
 
 // 校验规则
 const SCHEMA = {
@@ -46,10 +47,10 @@ const SCHEMA = {
 }
 
 /**
- * 
+ * 校验用户数据格式
  * @param {Object} data 用户数据
  */
-function userValidate(data = {}){
+function userValidate(data = {}) {
     return validate(SCHEMA, data)
 }
 

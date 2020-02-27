@@ -1,10 +1,12 @@
 /**
  * @description 用户数据模型
+ * 
  */
 
 const seq = require('../seq')
 const { STRING, DECIMAL } = require('../types')
 
+// users
 const User = seq.define('user', {
     userName: {
         type: STRING,
@@ -25,7 +27,7 @@ const User = seq.define('user', {
     gender: {
         type: DECIMAL,
         allowNull: false,
-        defaultValue: 3, //默认值，如果没有传值的话
+        defaultValue: 3,
         comment: '性别（1 男性，2 女性，3 保密）'
     },
     picture: {

@@ -12,7 +12,6 @@ const { CRYPTO_SECRET_KEY } = require('../conf/secretKeys')
  */
 function _md5(content) {
     const md5 = crypto.createHash('md5')
-    // hex 十六进制
     return md5.update(content).digest('hex')
 }
 
