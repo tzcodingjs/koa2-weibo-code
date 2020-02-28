@@ -53,6 +53,7 @@ router.post('/delete', loginCheck, async (ctx, next) => {
 })
 
 // 修改个人信息
+// http方法语义化 restfulApi的规范
 router.patch('/changeInfo', loginCheck, genValidator(userValidate), async (ctx, next) => {
     const { nickName, city, picture } = ctx.request.body
     ctx.body = await changeInfo(ctx, { nickName, city, picture })

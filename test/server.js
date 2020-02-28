@@ -1,8 +1,9 @@
 /**
- * @description jest 测试http接口
+ * @description jest server
+ * 
  */
 
- const request = require('supertest')
- const server = require('../src/app').callback()
+const request = require('supertest')
+const server = require('../src/app').callback()
 
- module.exports = request(server)
+module.exports = request(server)
