@@ -32,10 +32,10 @@ async function getBlogListByUser(
         userWhereOpts.userName = userName
     }
 
-    // 执行查询
+    // 执行查询 联表查询
     const result = await Blog.findAndCountAll({
         limit: pageSize, // 每页多少条
-        offset: pageSize * pageIndex, // 跳过多少条
+        offset: pageSize * pageIndex, // 跳过多少条， 实现分页
         order: [
             ['id', 'desc']
         ],
